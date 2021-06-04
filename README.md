@@ -4,7 +4,7 @@
 
 ## BRIEF
 
-Three lessons using modal | [**DEMO**](https://howiework.github.io/FIXMEproject-name/)
+Three lessons using modal | [**DEMO**](https://howiework.github.io/Modal/)
 
 ## KEYWORDS
 
