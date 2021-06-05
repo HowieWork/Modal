@@ -24,6 +24,7 @@ Original course simply introduces how to create modals using JavaScript. It soli
 
 I took one step further and added contents into this project. Below are changes I made:
 
-1. New content
-2. New background images
-3. CSS style improvement
+1. Add content
+2. Change background
+3. Update CSS style
+4. Update JS accordingly
