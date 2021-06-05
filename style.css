@@ -18,19 +18,29 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: linear-gradient(to top left, #28b487, #7dd56f);
+  background: linear-gradient(to top left, #49798c, #6c8c6e);
+}
+
+.show-btns {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
 }
 
 .show-modal {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.75rem 3.5rem;
-  margin: 5rem 2rem;
+  margin: 5rem 4rem;
   border: none;
-  background-color: #fff;
+  background-color: #f2f1dc96;
   color: #444;
   border-radius: 10rem;
   cursor: pointer;
+}
+
+.show-modal:hover {
+  background-color: #f2f1dc;
 }
 
 .close-modal {
@@ -53,10 +63,6 @@ p {
   font-size: 1.6rem;
 }
 
-button:focus {
-  outline: 0;
-}
-
 /* -------------------------- */
 /* CLASSES TO MAKE MODAL WORK */
 .hidden {
@@ -70,7 +76,7 @@ button:focus {
   transform: translate(-50%, -50%);
   width: 70%;
 
-  background-color: white;
+  background-color: #f2f1dc;
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
