@@ -35,6 +35,12 @@ p {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
 footer {
   position: absolute;
   bottom: 5%;
