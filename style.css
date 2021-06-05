@@ -38,7 +38,7 @@ p {
 a {
   text-decoration: inherit;
   color: inherit;
-  cursor: auto;
+  cursor: pointer;
 }
 
 footer {
