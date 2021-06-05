@@ -1,33 +1,48 @@
 'use strict';
 
 const showModalBtns = document.querySelectorAll('.show-modal');
-const closeModalBtn = document.querySelector('.close-modal');
-const modal = document.querySelector('.modal');
+const closeModalBtns = document.querySelectorAll('.close-modal');
+const modals = document.querySelectorAll('.modal');
+const modalDeath = document.querySelector('.modal-death');
+const modalMind = document.querySelector('.modal-mind');
+const modalAfterlife = document.querySelector('.modal-afterlife');
 const overlay = document.querySelector('.overlay');
 
-const showModal = function () {
+const showModal = function (name) {
+  const modal = document.querySelector(`.modal${name ? '-' + name : ''}`);
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
 
-const closeModal = function () {
+const closeModal = function (name) {
+  const modal = document.querySelector(`.modal${name ? '-' + name : ''}`);
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
 };
 
 showModalBtns.forEach(showBtn => {
-  showBtn.addEventListener('click', showModal);
+  showBtn.addEventListener('click', () => {
+    showModal(showBtn.value);
+  });
 });
 
 // Close modal by clicking close button
-closeModalBtn.addEventListener('click', closeModal);
+closeModalBtns.forEach(closeBtn => {
+  closeBtn.addEventListener('click', () => {
+    closeModal(closeBtn.value);
+  });
+});
 
 // Close modal by clicking overlay area
-overlay.addEventListener('click', closeModal);
+overlay.addEventListener('click', () => {
+  closeModal('');
+  modals.forEach(modal => modal.classList.add('hidden'));
+});
 
 // Close modal by pressing ESC
 document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-    closeModal();
+  if (e.key === 'Escape') {
+    closeModal('');
+    modals.forEach(modal => modal.classList.add('hidden'));
   }
 });
