@@ -28,3 +28,11 @@ I took one step further and added contents into this project. Below are changes 
 2. Change background
 3. Update CSS style
 4. Update JS accordingly
+
+## FUTURE UPDATES
+
+- [ ] Mobile friendly
+- [ ] One-click share
+- [ ] Background music
+- [ ] Background images updates
+- [ ] Multi-language
